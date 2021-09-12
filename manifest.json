@@ -1,0 +1,14 @@
+{
+    "name":"Tinderella",
+    "version":"1.0",
+    "author":"Emil Martinov",
+    "description":"This extension allows you to spam tinder.",
+    "content_scripts":[
+        {
+        "matches":["https://tinder.com/app/recs"],
+        "run_at":"document_end",
+        "js":["background.js"]
+        }
+    ],
+    "manifest_version":2
+}
